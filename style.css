@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,11 +11,11 @@
     --bg-color: green;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.header header{
+.header header {
     background-color: black;
     padding: .5rem 20rem;
     display: flex;
@@ -25,7 +25,7 @@ html{
 }
 
 
-.header header .logo{
+.header header .logo {
     /* background-color: aqua; */
     display: flex;
     align-items: center;
@@ -34,21 +34,21 @@ html{
     /* width: 100%; */
 }
 
-.header header .logo img{
+.header header .logo img {
     height: 6rem;
 }
 
-.header header .logo .texticon{
+.header header .logo .texticon {
     color: green;
     font-size: 2.5rem;
     font-weight: 900;
 }
 
-.header header .logo .texticon span{
+.header header .logo .texticon span {
     color: white;
 }
 
-.header header nav{
+.header header nav {
     /* background-color: red; */
     /* display: flex;
     align-items: center; */
@@ -57,7 +57,7 @@ html{
     /* width: 100%; */
 }
 
-.header header nav ul{
+.header header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,28 +68,28 @@ html{
     font-size: 1.8rem;
 }
 
-.header header nav ul li{
-  text-wrap: nowrap;
+.header header nav ul li {
+    text-wrap: nowrap;
 }
 
-.header header nav ul li:hover{
-   color: green;
-   cursor: pointer;
+.header header nav ul li:hover {
+    color: green;
+    cursor: pointer;
 }
 
-.header header nav ul .profile{
-  background-color: blueviolet;
-  padding:1.25rem 1.7rem;
-  /* padding:1rem; */
-  border-radius: 50%;
-  font-size: 2rem;
-  cursor: pointer;
-  /* display: flex;
+.header header nav ul .profile {
+    background-color: blueviolet;
+    padding: 1.25rem 1.7rem;
+    /* padding:1rem; */
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    /* display: flex;
   justify-content: center;
   align-items: center; */
 }
 
-.header header .tooltip{
+.header header .tooltip {
     background-color: rgb(93, 182, 93);
     position: absolute;
     right: 20rem;
@@ -98,26 +98,78 @@ html{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1.5rem;
 }
 
-.header header .tooltip .name , .email{
+.header header .tooltip .name,
+.email {
     font-size: 2rem;
 }
 
+.header header .tooltip button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: rgba(142, 194, 142, 0.836);
+}
+
+.header header .tooltip button i {
+    color: green;
+    font-size: 2rem;
+}
+
+
+
 @media screen and (max-width: 1117px) {
+
     /* .header header{
         background-color: red;
     } */
-     html{
+    html {
         font-size: 42%;
-     }
+    }
 
-     .header header nav ul .profile{
+    .header header nav ul .profile {
         background-color: blueviolet;
-        padding:1rem 1.7rem;
+        padding: 1rem 1.7rem;
         border-radius: 50%;
         font-size: 3rem;
         cursor: pointer;
-      }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header header {
+        padding: .5rem 10rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header header {
+        padding: .5rem 5rem;
+    }
+}
+
+/*  hamburder chalu ho raha hai */
+.header header .ham-profile {
+    background-color: red;
+    font-size: 3rem;
+    padding: .5rem 1.25rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.header header .slider {
+    background-color: red;
+    font-size: 3rem;
+    padding: .5rem 1.25rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
 }
