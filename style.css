@@ -207,6 +207,7 @@ html {
 
     .header header .slider .cross{
         cursor: pointer;
+        height: 21px;
     }
 
 
@@ -232,14 +233,6 @@ html {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-    }
-
-    .header header .slider .ham-nav .slider-email span {
-        background-color: red;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width:100%;
     }
 
     .header header .slider .ham-nav nav ul {
@@ -276,8 +269,7 @@ html {
 
 @media screen and (max-width: 400px) {
     .header header .slider {
-        background-color: red;
-        width: 60vw;
+        /* background-color: red; */
         justify-content: space-between;
     }
 
@@ -287,7 +279,7 @@ html {
     }
 
     .header header .slider .ham-nav {
-        background-color: green;
+        /* background-color: green; */
         font-size: 2rem;
         /* width: 100%; */
         gap: 1rem;
