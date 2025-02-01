@@ -1,0 +1,23 @@
+.footer{
+    font-size: 2.5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.footer .footerlogo{
+    color: var(--bg-color);
+    font-weight: 900;
+}
+
+.footer .footerlogo span{
+    color: white;
+}
