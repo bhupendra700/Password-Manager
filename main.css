@@ -1,0 +1,54 @@
+.main{
+    min-height: calc(100vh - 114px);
+    background-color: aqua;
+}
+
+@media screen and (min-width: 1117px){
+    .main{
+        min-height: calc(100vh - 136px);
+    }
+}
+
+.hero{
+    background-color: blue;
+    padding: 0 16rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.hero .hero-logo{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-logo div:nth-child(1){
+    color: green;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.hero .hero-logo div:nth-child(1) span{
+    color: white;
+}
+
+.hero .hero-logo div:nth-child(2){
+   color: rgba(26, 25, 25, 0.681);
+}
+
+
+
+.hero .hero-btn{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+ }
