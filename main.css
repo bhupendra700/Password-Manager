@@ -12,7 +12,7 @@
 .hero{
     background-color: blue;
     padding: 0 16rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -31,7 +31,7 @@
 .hero .hero-logo div:nth-child(1){
     color: green;
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .hero .hero-logo div:nth-child(1) span{
@@ -49,6 +49,77 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
     margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+ }
+
+.hero .hero-btn i{  /* idhar chal raha hai */
+    font-size: 3rem;
+ }
+
+ .hero .hero-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+ }
+
+ .hero .hero-input .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .hero .hero-input .input1 , .row .input2{
+    border-radius: 3rem;
+    padding: .5rem 2.5rem;
+    border: green .3rem solid;
+    outline: none;
+    /* font-size: 1.5rem; */
+ }
+
+ .hero .hero-input .row .input2{
+    width: 70%;
+ }
+
+ .hero .hero-input .row .password-wrap{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: green .3rem solid;
+  border-radius: 3rem;
+  padding: .5rem 2.5rem;
+  background-color: white;
+ }
+
+ .hero .hero-input .row .password-wrap{
+  width: 20%;
+ }
+
+ .hero .hero-input .row .password-wrap .input3{
+  width: 100%;
+  outline: none;
+  border: none;
+ }
+
+ @media screen and (max-width: 700px){
+    .hero{
+        background-color: blueviolet;
+    }
+
+    .hero .hero-input .row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero .hero-input .row .password-wrap{
+       width: 100%;
+    }
+
+    .hero .hero-input .row .input2{
+       width: 100%;
+    }
  }
