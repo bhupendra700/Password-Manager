@@ -1,15 +1,15 @@
-.main{
+.main {
     min-height: calc(100vh - 114px);
     background-color: aqua;
 }
 
-@media screen and (min-width: 1117px){
-    .main{
+@media screen and (min-width: 1117px) {
+    .main {
         min-height: calc(100vh - 136px);
     }
 }
 
-.hero{
+.hero {
     background-color: blue;
     padding: 0 16rem;
     font-size: 1.7rem;
@@ -20,7 +20,7 @@
     gap: 2rem;
 }
 
-.hero .hero-logo{
+.hero .hero-logo {
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
@@ -28,23 +28,23 @@
     align-items: center;
 }
 
-.hero .hero-logo div:nth-child(1){
+.hero .hero-logo div:nth-child(1) {
     color: green;
     font-weight: 800;
     font-size: 3.5rem;
 }
 
-.hero .hero-logo div:nth-child(1) span{
+.hero .hero-logo div:nth-child(1) span {
     color: white;
 }
 
-.hero .hero-logo div:nth-child(2){
-   color: rgba(26, 25, 25, 0.681);
+.hero .hero-logo div:nth-child(2) {
+    color: rgba(26, 25, 25, 0.681);
 }
 
 
 
-.hero .hero-btn{
+.hero .hero-btn {
     background-color: rgb(109, 216, 109);
     border: green 2px solid;
     display: flex;
@@ -56,92 +56,95 @@
     font-size: 1.8rem;
     cursor: pointer;
     gap: 1rem;
- }
+}
 
-.hero .hero-btn i{  /* idhar chal raha hai */
+.hero .hero-btn i {
+    /* idhar chal raha hai */
     font-size: 3.5rem;
     font-weight: 900;
- }
+}
 
- .hero .hero-input{
+.hero .hero-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
- }
+}
 
- .hero .hero-input .row{
+.hero .hero-input .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+}
 
- .hero .hero-input .input1 , .row .input2{
+.hero .hero-input .input1,
+.row .input2 {
     border-radius: 3rem;
     padding: .5rem 2.5rem;
     border: green .3rem solid;
     outline: none;
     /* font-size: 1.5rem; */
- }
+}
 
- .hero .hero-input .row .input2{
+.hero .hero-input .row .input2 {
     width: 70%;
- }
+}
 
- .hero .hero-input .row .password-wrap{
-  width: 20%;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  border: green .3rem solid;
-  border-radius: 3rem;
-  padding: .5rem 2.5rem;
-  background-color: white;
- }
+.hero .hero-input .row .password-wrap {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: green .3rem solid;
+    border-radius: 3rem;
+    padding: .5rem 2.5rem;
+    background-color: white;
+}
 
- .hero .hero-input .row .password-wrap{
-  width: 20%;
- }
+.hero .hero-input .row .password-wrap {
+    width: 20%;
+}
 
- .hero .hero-input .row .password-wrap .input3{
-  width: 100%;
-  outline: none;
-  border: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
- }
- .hero .hero-input .row .password-wrap i{
+.hero .hero-input .row .password-wrap .input3 {
+    width: 100%;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero .hero-input .row .password-wrap i {
     cursor: pointer;
- }
+}
 
- @media screen and (max-width: 700px){
-    .hero{
+@media screen and (max-width: 700px) {
+    .hero {
         background-color: blueviolet;
     }
 
-    .hero .hero-input .row{
+    .hero .hero-input .row {
         flex-direction: column;
         gap: 2rem;
     }
 
-    .hero .hero-input .row .password-wrap{
-       width: 100%;
+    .hero .hero-input .row .password-wrap {
+        width: 100%;
     }
 
-    .hero .hero-input .row .input2{
-       width: 100%;
+    .hero .hero-input .row .input2 {
+        width: 100%;
     }
- }
+}
 
 
-.password-table{
+.password-table {
     font-size: 2rem;
     padding: 0 16rem;
     margin-top: 2rem;
 }
 
-.password-table div:nth-child(1){
+.password-table .heading {
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 2rem;
@@ -156,43 +159,41 @@
     background-color: green;
 }
 
-.password-table .table table tr td{
-    /* text-align: center;  */
+.password-table .table table tr td {
+    text-align: center;
     padding: 1rem;
-    width: 25%; 
+    width: 25%;
     background-color: blue;
-    word-wrap: break-word;
-    overflow-wrap: break-word; 
-    word-break: break-word; 
-    white-space: normal;
+    border: 2px solid red;
+    word-break: break-word;
 }
 
-.password-table .table table tr:nth-child(1) th{
-    text-align: center; 
+.password-table .table table tr:nth-child(1) th {
+    text-align: center;
     padding: 1rem;
-    width: 25%; 
+    width: 25%;
 }
 
 .password-table .table table tr td:nth-child(1) {
-    width: 50%; 
+    width: 50%;
 }
 
 .password-table .table table tr td:nth-child(4) {
-    width: 15%; 
+    width: 15%;
 }
 
-.password-table .table table tr:nth-child(1) th:nth-child(1){
-    width: 50%; 
+.password-table .table table tr:nth-child(1) th:nth-child(1) {
+    width: 50%;
     border-top-left-radius: 1rem
 }
 
-.password-table .table table tr:nth-child(1) th:nth-child(4){
-    width: 15%; 
+.password-table .table table tr:nth-child(1) th:nth-child(4) {
+    width: 15%;
     border-top-right-radius: 1rem;
 }
 
-@media screen and (max-width: 700px){
-    .password-table{
+@media screen and (max-width: 700px) {
+    .password-table {
         padding: 0 2rem;
     }
 }
