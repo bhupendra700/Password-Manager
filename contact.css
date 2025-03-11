@@ -1,0 +1,40 @@
+.contact-page{
+    background-color: rgba(223, 241, 195, 0.315);
+    width: 100%;
+    height: calc(100vh - 114px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1118px) {
+    .contact-page{
+        height: calc(100vh - 136px);
+    }
+}
+
+.contact-page form{
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    background-color: green;
+    padding: 3rem;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.con-name , .con-email , .message{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 2rem;
+}
+
+.con-name input, .con-email input , .message textarea{
+background-color: aqua;
+border: none;
+outline: none;
+border-radius: 1rem;
+padding: 1.5rem;
+width: 100%;
+}
